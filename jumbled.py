@@ -50,7 +50,7 @@ def play():
           print(p2name,'Your turn. ')
           ans=input('Whats on my mind?')
           if ans ==picked_word:
-              pp1=pp1+1
+              pp2=pp2+1
               print("Your score is :" ,pp2)
           else:
               print('Better luck next time:' ,picked_word)
