@@ -65,10 +65,10 @@ def play():
                     #unlock
                     modified_qn=unlock(modified_qn,pick_movie,letter)
                     print(modified_qn)
-                    d=input('Press 1 to guess the movie or 2 to unlock another letter: ')
+                    d=int(input('Press 1 to guess the movie or 2 to unlock another letter: '))
                     if (d==1):
                         ans=input("Your answer: ")
-                        if ans==pick_movie:
+                        if (ans==pick_movie):
                             pp1=pp1+1
                             print("Congrats! You are right.")
                             not_said=False
@@ -77,7 +77,7 @@ def play():
                             print("Wrong answer,try again.")
                 else:
                     print(letter,"Not found")
-            c=input("Press 1 to continue or 0 to quit: ")
+            c=int(input("Press 1 to continue or 0 to quit: "))
             if(c==0):
                 print(p1name,"Your score:" ,pp1)
                 print(p2name,"Your score:" ,pp2)
@@ -99,7 +99,7 @@ def play():
                     #unlock
                     modified_qn=unlock(modified_qn,pick_movie,letter)
                     print(modified_qn)
-                    d=input('Press 1 to guess the movie or 2 to unlock another letter: ')
+                    d=int(input('Press 1 to guess the movie or 2 to unlock another letter: '))
                     if (d==1):
                         ans=input("Your answer: ")
                         if ans==pick_movie:
@@ -111,7 +111,7 @@ def play():
                             print("Wrong answer,try again.")
                 else:
                     print(letter,"Not found")
-            c=input("Press 1 to continue or 0 to quit: ")
+            c=int(input("Press 1 to continue or 0 to quit: "))            
             if(c==0):
                 print(p1name,"Your score:" ,pp1)
                 print(p2name,"Your score:" ,pp2)
