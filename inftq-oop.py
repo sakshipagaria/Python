@@ -67,7 +67,7 @@ m3=Mobile('8gb','855',45000)
 print(m1)
 print(m2)
 print(m3)
-print(m1.get_price)
+print(m1.set_price)
 
 -------------output------------
 Ram: 16gb
