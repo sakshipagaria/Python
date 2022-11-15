@@ -53,11 +53,11 @@ class Mobile:
         return f'Ram: {self._ram}\nProcessor:{self._processor}\nPrice:{self._price}'
         
     #setters
-    def get_ram(self):
+    def set_ram(self):
         return self._ram 
-    def get_processor(self):
+    def set_processor(self):
         return self._processor
-    def get_price(self):
+    def set_price(self):
         return self._price
  
 m1=Mobile('16gb','8gen1',90000)
