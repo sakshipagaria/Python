@@ -1,0 +1,26 @@
+ADVANCED PYTHON PROGRAMMING:-
+
+collection of instruction -program
+collection of programe-software
+single task-single thread (smallest unit that can be executed)
+default thread which is mandatory-main thread
+collection of functions and classes-module
+
+
+MULTITHREADING:way to acheive multtasking 
+-process based multitasking-executing multiple task where each task is independent
+-thread based multitasking-same prog containing several task.each thread is seprate independent part and all task executing simultaneously
+
+Application of multithreading:
+-videogame development
+-animation
+-multimedia graphics
+-development of web and server
+
+When should we go for multithreading:
+if all the task are independent,then there is no need to execute each task independently
+
+Ways to create threadin python:
+-BESTWAY-thread creation by extending thread class
+-thread creation w/o using any class
+-thread creation  w/o extending any class
