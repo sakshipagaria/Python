@@ -31,3 +31,17 @@ for i in range(10):
     print("Main Thread-1")
     
     
+ #thread creation without extending a thread class
+
+from threading import*
+import time
+class MyTest:
+  def display(self):
+    for i in range(10):
+      print("Child Thread\n")
+obj=MyTest()
+t=threading.Thread(target=obj.display)
+t.start()
+
+for i in range(10):
+  print("Main Thread\n")
