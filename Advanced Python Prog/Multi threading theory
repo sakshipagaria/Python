@@ -38,3 +38,21 @@ Types of thread:
 -non deamon thread
 
 DEAMON THREAD:thread that runs in the background and it provides support to non deamon i.r main thread
+
+Synchronization:
+when man thread runs low on memory,immediately PVM runs garbage collector to destory useless objects and to provide free memory,so that main thread continues its execution without any memory issues
+
+PVM python virtual machine is Python interpreter
+
+Application of python : online railway resgistration
+
+Implementation of synchronization in python:
+-lock
+-semaphore
+-Rlock
+
+-Lock concept of synchronization:
+threading modeule provide the lock concept and create lock obj 
+ ex. obj=Lock()
+if one thread tries to access the same obj lock that other thread is already holding then 1st thread need to wait unlit the other thread releases it.
+The acquire()method help the thread to acquire the lock and by using release()method thread release the lock
