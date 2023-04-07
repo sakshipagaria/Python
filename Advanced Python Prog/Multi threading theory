@@ -23,3 +23,18 @@ Ways to create threadin python:
 -BESTWAY-thread creation by extending thread class
 -thread creation w/o using any class
 -thread creation  w/o extending any class
+
+when you call start() method ,run() method automatically gets executed and performs our job
+
+------------------------DAY2--------------------------------------
+
+thread identification number -Ident
+every thread yani task internally having UID number and that can be get by implicit variable ident 
+
+difference between suspend(),sleep() and wait()?
+
+Types of thread:
+-deamon 
+-non deamon thread
+
+DEAMON THREAD:thread that runs in the background and it provides support to non deamon i.r main thread
