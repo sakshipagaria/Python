@@ -31,7 +31,11 @@ when you call start() method ,run() method automatically gets executed and perfo
 thread identification number -Ident
 every thread yani task internally having UID number and that can be get by implicit variable ident 
 
-difference between suspend(),sleep() and wait()?
+difference between suspend(),sleep() and wait():
+-sleep():sleep method send the current Thread into non runnable state for a given amount of time .And sleep() belongs to thread class
+-wait():wait method send thread into non runnable state until called notify or notifyAll for this object .And wait() belongs to obj class
+-suspend():suspend method suspends the thread till resume method is called on that thread suspend methodis disapproved as it is prone to deadlock situtation
+
 
 Types of thread:
 -deamon 
