@@ -30,7 +30,7 @@ p4=int(input("Social Science marks="))
 p5=int(input("Geography= "))
 total=p1+p2+p3+p4+p5
 percentage=(total/500)*100
-if p1>=40 and p2>=40 and p3>=40 and p4>=40 and p5>=40:
+if p1>40 and p2>40 and p3>40 and p4>40 and p5>40:
     result="Pass"
 else:
     result="Fail"
