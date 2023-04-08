@@ -4,7 +4,7 @@ collection of programe-software
 single task-single thread (smallest unit that can be executed)
 default thread which is mandatory-main thread
 collection of functions and classes-module
-
+number of task waiting back to back in a sequence -Thread pull
 
 MULTITHREADING:way to acheive multtasking 
 -process based multitasking-executing multiple task where each task is independent
