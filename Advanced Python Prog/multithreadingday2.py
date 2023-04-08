@@ -42,16 +42,3 @@ child.start()
 print("Main thread ID",current_thread().ident)
 print("Child thread ID",child.ident)
 
-#-------------------------------------
-#Without Synchronization
-from threading import*
-import time
-def conferenceCall(myname):
-    print("Halo,Ich bin ")
-    time.sleep(1)
-    print(myname)
-obj1 =Thread(target=conferenceCall,args=("Sakshi",))
-obj2 =Thread(target=conferenceCall,args=("Chai",))
-#here 2 objs are going to access same method at sam etime
-obj1.start()
-obj2.start()
