@@ -60,3 +60,31 @@ threading modeule provide the lock concept and create lock obj
  ex. obj=Lock()
 if one thread tries to access the same obj lock that other thread is already holding then 1st thread need to wait unlit the other thread releases it.
 The acquire()method help the thread to acquire the lock and by using release()method thread release the lock
+
+Lock:
+-lock will acquire the lock obj ,same tread also can not aquire multiple times. 
+-recursive function and nested calls are not possible.
+-It is responsible for lock and unlock
+
+Rlock:
+-At a time only one thread can acquire the lock obj ,same thread can aquire the lock obj multiple times.
+-Recursive function and nested calls are Possible .
+-it handles all responsiblities 
+
+Semaphore:
+-number of threads you allow to execute at a time
+
+Regular expression:
+if string containig any specific pattern then use RegEx
+python 're' module 
+
+Applications of RE:
+-used to develop digital circuit
+-used to develop the compiler and interpreter
+-used to develop communication protocol like TCP/IP etc
+-used to develop validation logic
+-used to develop the pattern matching and searching application like ctrlF 
+
+Compile function():
+available inside re module
+used to compile a pattern 
