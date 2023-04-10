@@ -51,3 +51,24 @@ print("Lock acquired for the first time")
 obj.acquire()
 print("lock acquired second time")
 obj.acquire()
+
+#---------------------------------------------
+#semaphore
+
+from threading import *
+import time
+l=Semaphore(4)
+def come_in(name):
+    l.acquire()
+    for i in range(5):
+        print("Ja herr: ",name)
+        time.sleep(1)
+    l.release()
+obj1=Thread(target=come_in,args=("Aarish",))
+obj2=Thread(target=come_in,args=("Murtasim",))
+obj3=Thread(target=come_in,args=("Merrab",))
+obj4=Thread(target=come_in,args=("Sasha",))
+obj1.start()
+obj2.start()
+obj3.start()
+obj4.start()
