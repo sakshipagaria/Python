@@ -56,3 +56,32 @@ for i in matcher:
 print("The number of occurences:",count)
 
 #---------------------------------------------
+#---------------------------------------------
+# #fulll match function
+import re
+a=input("Enter string to perform match operation: ")
+mtch=re.fullmatch(a,"python is very")
+print(mtch)
+if mtch!=None:
+    print("Match found at the begining level")
+    print(mtch.start()," ",mtch.end())
+else:
+    print("There is no match at the begining level")
+
+#--------------------------------------------------
+# #search fucntion
+import re
+a=input("Enter string to perform match operation: ")
+mtch=re.search(a,"sakshiiscrazy")
+print(mtch)
+if mtch!=None:
+    print(mtch.start()," ",mtch.end())
+else:
+    print("There is no match at the begining level")
+
+#-----------------------------------------------
+#find all fucntion
+
+import re
+mtch=re.findall('[0-5]',"sdgwed735egfd3")
+print(mtch)
