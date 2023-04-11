@@ -12,7 +12,7 @@ else:
 
 import re
 password=input("Enter your password: ")
-obj=re.fullmatch("[a-zA-Z0-9]\w{1,8}",password)
+obj=re.fullmatch("[a-zA-Z0-9@!#$%^&*()]\w{1,8}",password)
 if obj!=None:
     print("Strong password")
 else:
