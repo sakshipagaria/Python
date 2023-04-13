@@ -88,3 +88,55 @@ Applications of RE:
 Compile function():
 available inside re module
 used to compile a pattern 
+
+Match character classes:
+[abc]===> either a or b or c
+[^abc]===>except a and b and c
+[a-z],[A-Z]==>any lower-upper case alaphabet symbol
+[a-zA-z]===>any alphabet symbol
+
+Inbuilt chracter classes:
+\s-space
+\S-any char except space
+\d-digit0-9
+\D-any char except digit
+
+Quantifiers
+a-exactly one a 
+a{m}-exactly m number of a's 
+a+-atleast one a 
+#-replacement char for password
+
+Framework-used for fast development
+Flask-good for mini projects
+Django-framework helpful for mini as well as major projects
+
+Steps:
+pip-installation manager of python
+create proj using command from doc of Django
+now go to mysite(proj name)
+manage.py-cmd utlility file 
+runn server-python manage.py runserver
+type ctrl c to stop the server
+python manage.py startapp sakshidj
+
+pycache-all the file under pycache containes binary code so that the proj will run on any os
+django supports sqlite database
+
+M-model (communicates with the database)
+V-view (business logic layer)
+T-template (presentation layer)
+MVT architecture
+
+setting.py file-holds the entire connectivity of the project
+render fucntions cans end dynamic as well as static data 
+logic-
+1.class based views 
+2.function based views
+
+3 arguments-
+1. pattern(matches to the url)
+2. index function import from views
+3. url name(optional)
+
+-include app's name in settings.py 
