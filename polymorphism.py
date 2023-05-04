@@ -1,5 +1,4 @@
 #polymorphism
-#functional overloading
 
 class Principal:
     def role(self):
@@ -23,3 +22,6 @@ def func(obj):
 campus=[Principal(),Dean(),HoD(),Faculty()]
 for obj in campus:
     func(obj)
+
+#--------------------------------------------------
+#hasttr(obj,'role'):
